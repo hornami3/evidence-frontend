@@ -1,6 +1,5 @@
 import http from '../axios/http-common';
-import { AstronautData } from '../types/astronaut';
-import { httpAstronaut } from '../types/astronaut';
+import { AstronautData, httpAstronaut } from '../types/astronaut';
 
 interface AxiosResMany {
     status: string,
