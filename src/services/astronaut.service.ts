@@ -22,7 +22,7 @@ export const get = (id: string) => {
 };
 
 export const update = (id: string, data: AstronautData) => {
-    return http.patch<AxiosResOne>(`/astronauts/${id}`);
+    return http.patch<AstronautData, AxiosResOne>(`/astronauts/${id}`, data);
 };
 
 export const remove = (id: string) => {
