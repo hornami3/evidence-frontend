@@ -1,0 +1,13 @@
+.header {
+  margin: 2rem;
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.main {
+  max-width: 1024px;
+  margin: auto;
+}
