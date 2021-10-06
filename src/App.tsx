@@ -1,6 +1,12 @@
+import AstronautContenxtProvider from './store/astronaut-context'
+import Layout from './components/UI/Layout';
+
 const App = () => {
   return (
-    <h1>Start</h1>
+    <AstronautContenxtProvider>
+      <Layout>
+      </Layout>
+    </AstronautContenxtProvider>
   );
 }
 
