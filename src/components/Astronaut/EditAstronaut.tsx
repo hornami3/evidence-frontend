@@ -11,25 +11,25 @@ const EditAstronaut: React.FC<Props> = props => {
   const { id } = props;
 
   const astronautCtx = useContext(AstronautContext);
-  const [addFormIsVisible, setAddFormIsVisible] = useState(false);
+  const [editFormIsVisible, setEditFormIsVisible] = useState(false);
   
-  const showAddFormHandler = () => {
-    setAddFormIsVisible(true);
+  const showEditFormHandler = () => {
+    setEditFormIsVisible(true);
   };
   
-  const hideAddFormHandler = () => {
-    setAddFormIsVisible(false);
+  const hideEditFormHandler = () => {
+    setEditFormIsVisible(false);
   };
 
   const foundAstronaut = astronautCtx.astronauts.find(astronaut => astronaut.id === id);
 
   return (
     <Fragment>
-      <Button clickHandler={showAddFormHandler} type='default'>Upravit</Button>
+      <Button clickHandler={showEditFormHandler} type='default'>Upravit</Button>
       {
-        addFormIsVisible && 
+        editFormIsVisible && 
         <AstronautForm 
-          onCloseModal={hideAddFormHandler} 
+          onCloseModal={hideEditFormHandler} 
           edit 
           astronautId={id} 
           defaultData={foundAstronaut} 
