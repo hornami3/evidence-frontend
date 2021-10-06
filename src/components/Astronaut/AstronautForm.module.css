@@ -1,0 +1,25 @@
+.form {
+  width: 100%;
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #3B82F6;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+
+.button[disabled],
+.button[disabled]:hover {
+  background: #BFDBFE;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background: #60A5FA;
+  cursor: pointer;
+}
