@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  outline: none;
+  background: #2563EB;
+  color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  min-width: 5rem;
+}
+
+.button:hover {
+  background: #3B82F6;
+}
+
+.button.danger {
+  background: #DC2626;
+}
+
+.button.danger:hover {
+  background: #EF4444;
+}
